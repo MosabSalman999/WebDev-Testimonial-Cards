@@ -1,0 +1,236 @@
+  /* Chat container */
+  .chat-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      /* Center the message */
+      margin-top: 50px;
+
+  }
+
+  img {
+      object-fit: cover;
+  }
+
+  .message_Artem-Jones-and-Sam-Jones {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+  }
+
+  .message_Artem-Jones_text {
+      position: relative;
+      background-color: #1E1E1E;
+      /* Blue message color */
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 250px;
+      font-size: 16px;
+  }
+
+  .message_Artem-Jones_text::after {
+      content: "";
+      position: absolute;
+      bottom: -9px;
+      left: 20px;
+      /* Adjust position */
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid #1E1E1E;
+      /* Match the bubble color */
+  }
+
+  /* Message bubble */
+
+
+  /* Triangle (Tail) */
+
+
+  .message_Artem-Jones {
+      width: 400px;
+      margin-left: 20px;
+      border-radius: 10px;
+
+      img {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          margin-top: 10px;
+          object-fit: cover;
+      }
+
+      .message_Artem-Jones_info {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-top: 10px;
+
+          .message_Artem-Jones_info-text {
+              margin-left: 10px;
+              display: flex;
+              flex-direction: column;
+              align-items: start;
+              justify-content: center;
+              font-size: 14px;
+              color: #000000;
+          }
+      }
+  }
+
+  .message_Sam-Jones {
+      width: 400px;
+      border: solid #1E1E1E;
+      padding: 20px;
+      border-radius: 10px;
+
+      img {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          margin-top: 10px;
+          object-fit: cover;
+      }
+
+      .message_Sam-Jones_info {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-top: 10px;
+
+          .message_Sam-Jones_info-text {
+              margin-left: 10px;
+              display: flex;
+              flex-direction: column;
+              align-items: start;
+              justify-content: center;
+              font-size: 14px;
+              color: #1E1E1E;
+          }
+      }
+  }
+
+  .hero {
+      margin-top: 3em;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      img {
+          width: 200px;
+          height: 200px;
+          border-radius: 20px;
+          margin-top: 10px;
+          object-fit: cover;
+      }
+
+      .commentBox_Jackie-Mackle {
+          background-color: #1E1E1E;
+          padding: 20px;
+          border-radius: 10px;
+          margin-left: 40px;
+
+          .starts {
+
+              display: flex;
+              flex-direction: row;
+              align-items: start;
+              justify-content: start;
+
+              img {
+                  width: 20px;
+                  height: 20px;
+              }
+          }
+
+          .commentBox_Jackie-Mackle_text {
+              display: flex;
+              flex-direction: column;
+              align-items: start;
+              justify-content: center;
+              font-size: 14px;
+              color: #ffffff;
+
+              margin-top: 10px;
+
+              span {
+                  font-size: larger;
+                  font-weight: 700;
+              }
+
+              p {
+                  font-size: 16px;
+              }
+
+
+          }
+
+
+
+      }
+
+
+
+  }
+
+  footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+      border: solid#1E1E1E;
+      border-radius: 20px;
+      align-items: center;
+      margin-top: 50px;
+      font-size: 14px;
+      color: #1E1E1E;
+
+      .scroll_images {
+          display: flex;
+          flex-direction: row;
+
+          .main_image {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+
+              img {
+                  opacity: 1;
+                  width: 50px;
+                  height: 50px;
+              }
+
+
+          }
+
+          img {
+              opacity: 0.5;
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+
+          }
+      }
+
+      .arrow_left {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          rotate: 90deg;
+      }
+
+      .arrow_right {
+
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          rotate: 270deg;
+
+      }
+  }
