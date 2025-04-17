@@ -1,16 +1,23 @@
   /* Chat container */
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
   .chat-container {
-      display: flex;
+      display: grid;
+      grid-template-columns: auto ;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
-      /* Center the message */
+      width: 60%;
       margin-top: 50px;
 
   }
 
   img {
       object-fit: cover;
+
   }
 
   .message_Artem-Jones-and-Sam-Jones {
@@ -54,7 +61,7 @@
 
   .message_Artem-Jones {
       width: 400px;
-      margin-left: 20px;
+     
       border-radius: 10px;
 
       img {
@@ -122,10 +129,11 @@
       justify-content: space-between;
 
       img {
-          width: 200px;
-          height: 200px;
+          width: 300px;
+          height: 250px;
           border-radius: 20px;
-          margin-top: 10px;
+
+          
           object-fit: cover;
       }
 
@@ -143,8 +151,8 @@
               justify-content: start;
 
               img {
-                  width: 20px;
-                  height: 20px;
+                  width: 30px;
+                  height: 30px;
               }
           }
 
@@ -157,6 +165,7 @@
               color: #ffffff;
 
               margin-top: 10px;
+              margin-left: 30px;
 
               span {
                   font-size: larger;
